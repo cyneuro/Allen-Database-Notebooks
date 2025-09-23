@@ -1,3 +1,10 @@
+# stuff from install
+aisynphys/
+neuroanalysis/
+
+# stuff from notebook output
+cell_types/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

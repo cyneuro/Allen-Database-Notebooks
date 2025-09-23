@@ -1,0 +1,5 @@
+# need these duh
+notebook
+allensdk
+scikit-learn
+bmtool

@@ -11,7 +11,7 @@ A collection of Jupyter notebooks for analyzing neuroscience data from the Allen
 ### Installation
 
 1. Create a Python environment:
-   ```bash
+   ```bashawefa
    conda create -n allen-notebooks python=3.11
    conda activate allen-notebooks
    ```

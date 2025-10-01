@@ -38,26 +38,38 @@ A collection of Jupyter notebooks for analyzing neuroscience data from the Allen
 
 ### Usage
 
-This repository contains three main Jupyter notebooks for analyzing neuroscience data:
+This repository contains several Jupyter notebooks for analyzing neuroscience data:
 
-#### `Synapses/in_vivo_synapses.ipynb`
-Analyzes synaptic connectivity and properties between different cell types in mouse visual cortex. The notebook:
-- Loads synapse data from the Allen Institute's synaptic physiology database
+#### Synapses
+
+##### `Synapses/chemical_synapses.ipynb`
+Analyzes chemical synaptic properties between cell types in mouse visual cortex. The notebook:
+- Loads excitatory synapse data from the Allen Institute database
 - Defines cell classes (ET, IT, PV, SST neurons)
-- Extracts excitatory and inhibitory synapse parameters
-- Fits stochastic release models to characterize synaptic transmission
+- Extracts and analyzes synaptic parameters
+- Fits stochastic release models
 
-#### `Cells/in_vivo_cell_properties.ipynb`
+##### `Synapses/electrical_synapses.ipynb`
+Examines electrical synapses (gap junctions) in inhibitory neuron subclasses. The notebook:
+- Queries gap junction data for PV, SST, and VIP cells
+- Measures junctional conductance
+- Visualizes conductance distributions across cell types
+
+#### Cells
+
+##### `Cells/in_vivo_cell_properties.ipynb`
 Examines electrophysiological properties of individual neurons from the Allen Cell Types Database. The notebook:
 - Filters cells by species, brain region (Layer 5 visual cortex), and transgenic lines
 - Extracts key electrophysiological features (input resistance, membrane time constant, etc.)
 - Generates visualizations of cell type-specific characteristics such as FI curve and current clamps
 
-#### `Connections/connections.ipynb`
+#### Connections
+
+##### `Connections/connections.ipynb`
 Analyzes synaptic connectivity between cell classes in mouse visual cortex (V1). The notebook:
 - Loads cell pair data from the Allen Institute's synaptic physiology database
 - Defines cell classes based on cortical layer and transgenic markers
-- Computes raw and distance-adjusted connection probabilities
-- Visualizes connectivity profiles and fits Gaussian models to distance-dependent connectivity
+- Computes raw and distance-adjusted connection probabilities with fitted Gaussian models
+- Visualizes connectivity profiles and distance-dependent connectivity
 - Estimates synaptic convergence using uniform cell distribution assumptions
 

@@ -55,6 +55,14 @@ Examines electrical synapses (gap junctions) in inhibitory neuron subclasses. Th
 - Measures junctional conductance
 - Visualizes conductance distributions across cell types
 
+##### `Synapses/synapse_strength.ipynb`
+Analyzes synaptic strength by converting postsynaptic potential (PSP) and current (PSC) measurements to synaptic conductance. The notebook:
+- Loads synaptic data for excitatory (ET, IT) and inhibitory (PV, SST) cell types
+- Converts raw voltage and current amplitudes to conventional units (mV, pA)
+- Calculates synaptic conductance (G_syn) using driving force assumptions
+- Breaks down synaptic strength by cell pair combinations (e.g., PV→ET, IT→SST)
+- Visualizes conductance distributions and generates summary statistics with quartiles
+
 #### Cells
 
 ##### `Cells/in_vivo_cell_properties.ipynb`
